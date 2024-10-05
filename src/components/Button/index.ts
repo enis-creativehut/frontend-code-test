@@ -1,1 +1,3 @@
-// index.ts
+import Button from './Button'
+
+export default Button

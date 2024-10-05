@@ -1,0 +1,11 @@
+.button-base {
+  @apply w-60 py-2 px-4 text-base font-semibold text-white rounded-full transition-colors duration-300 uppercase;
+}
+
+.button-primary {
+  @apply bg-black hover:bg-blue-700;
+}
+
+.button-disabled {
+  @apply opacity-50 cursor-not-allowed;
+}
