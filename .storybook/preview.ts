@@ -1,4 +1,3 @@
-// .storybook/preview.js
 import { Preview } from '@storybook/react'
 
 import '../src/styles/main.css'
@@ -8,11 +7,11 @@ const preview: Preview = {
     actions: { argTypesRegex: '^on[A-Z].*' },
     layout: 'fullscreen',
     backgrounds: {
-      default: 'white',
+      default: 'gray',
       values: [
         {
-          name: 'white',
-          value: '#ffffff',
+          name: 'gray',
+          value: '#a3a3a3',
         },
         {
           name: 'black',

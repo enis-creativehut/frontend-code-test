@@ -5,9 +5,11 @@ import Button from './Button'
 describe('Button', () => {
   describe('When renders and the button is disabled', () => {
     const mockedProps: IButtonProps = {
-      icon: true,
+      title: 'test button',
+      startIcon: true,
       disabled: true,
       callback: jest.fn(),
+      variant: '',
     }
 
     beforeEach(() => {
@@ -33,8 +35,10 @@ describe('Button', () => {
 
   describe('When renders and the button is enabled', () => {
     const mockedProps: IButtonProps = {
+      title: 'test button',
       disabled: false,
       callback: jest.fn(),
+      variant: '',
     }
 
     beforeEach(() => {

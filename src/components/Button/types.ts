@@ -1,6 +1,9 @@
 interface IButtonProps {
-  icon?: boolean
+  title?: string
+  variant: string
+  startIcon?: boolean
   callback: () => void
+  loading?: boolean
   disabled: boolean
 }
 
