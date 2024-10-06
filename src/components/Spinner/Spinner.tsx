@@ -1,10 +1,11 @@
 function Spinner() {
   return (
     <svg
-      className="animate-spin h-5 w-5 text-white"
+      className="animate-spin h-8 w-8"
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 24 24"
+      aria-label="loading-spinner-icon"
     >
       <circle
         className="opacity-25"
@@ -12,7 +13,7 @@ function Spinner() {
         cy="12"
         r="10"
         stroke="currentColor"
-        stroke-width="4"
+        strokeWidth="4"
       />
       <path
         className="opacity-75"

@@ -1,10 +1,10 @@
-interface IButtonProps {
+interface ButtonProps {
   title?: string
   variant: string
   startIcon?: boolean
-  callback: () => void
+  callbackFn: () => void
   loading?: boolean
-  disabled: boolean
+  disabled?: boolean
 }
 
-export type { IButtonProps }
+export type { ButtonProps }

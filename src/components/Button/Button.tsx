@@ -1,35 +1,32 @@
 import { useState } from 'react'
 import Spinner from '../Spinner'
 import { CheckCircleIcon } from '@heroicons/react/solid'
-import { IButtonProps } from './types'
+import { ButtonProps } from './types'
 import './Button.styles.css'
 
 function Button({
   title,
   variant,
   startIcon,
-  callback,
+  callbackFn,
   loading,
   disabled,
-}: IButtonProps) {
+}: ButtonProps) {
   return (
     <button
-      className={`button-base ${
-        disabled ? 'button-disabled' : `button-${variant ?? 'primary-solid'}`
-      }`}
+      className={`button button-${variant ?? 'primary'}`}
       disabled={disabled || loading}
       type="button"
-      onClick={callback}
+      onClick={callbackFn}
     >
-      {loading && <Spinner />}
       {startIcon && !loading && (
         <CheckCircleIcon
           aria-label="check-icon"
-          className="h-5 w-5"
+          className="button-icon"
           aria-hidden="true"
         />
       )}
-      <span>{title}</span>
+      {loading ? <Spinner /> : <span className="button-text">{title}</span>}
     </button>
   )
 }

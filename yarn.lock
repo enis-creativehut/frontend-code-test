@@ -2422,6 +2422,7 @@ __metadata:
     "@types/react": ^18.3.11
     "@types/react-dom": ^18.3.0
     "@types/react-router-dom": ^5.3.3
+    "@types/storybook__react": ^5.2.1
     "@types/styled-components": ^5.1.25
     "@typescript-eslint/eslint-plugin": ^6.1.0
     "@typescript-eslint/parser": ^5.25.0
@@ -3007,6 +3008,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@storybook/components@npm:^8.3.5":
+  version: 8.3.5
+  resolution: "@storybook/components@npm:8.3.5"
+  peerDependencies:
+    storybook: ^8.3.5
+  checksum: 2f6198df20fd547f1f85fa33fe3b19b93765606ff75892d60e99dcc7e18d2deba2ca1a758f6baf15157c3add5d1ee0a05b5640f3a7ba8afa2461ba5538550c80
+  languageName: node
+  linkType: hard
+
 "@storybook/core-common@npm:8.0.5":
   version: 8.0.5
   resolution: "@storybook/core-common@npm:8.0.5"
@@ -3238,6 +3248,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@storybook/manager-api@npm:^8.3.5":
+  version: 8.3.5
+  resolution: "@storybook/manager-api@npm:8.3.5"
+  peerDependencies:
+    storybook: ^8.3.5
+  checksum: e2043aa681a9186d128ed820cafbd18e55e0c625c17dd9018e35a82ca2376d4095d3ff04a9afaa4855bf36b15ec64122c0a455a61d5113900cff3dbc91c42454
+  languageName: node
+  linkType: hard
+
 "@storybook/manager@npm:8.0.5":
   version: 8.0.5
   resolution: "@storybook/manager@npm:8.0.5"
@@ -3303,6 +3322,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@storybook/preview-api@npm:^8.3.5":
+  version: 8.3.5
+  resolution: "@storybook/preview-api@npm:8.3.5"
+  peerDependencies:
+    storybook: ^8.3.5
+  checksum: 9d605197376e218967332daaaf4958c908593663fa1e34fb65fd56d3783f74a32c82f345cbdcb6b7efa946dcb6b2d07de88f940761794326f24f8f1116e9c44f
+  languageName: node
+  linkType: hard
+
 "@storybook/preview@npm:8.0.5":
   version: 8.0.5
   resolution: "@storybook/preview@npm:8.0.5"
@@ -3335,6 +3363,17 @@ __metadata:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0
     react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
   checksum: 3738eaae4f2feada1df879505bee820322c9a82a661c55cfdbc13c5bbe717aa7a38040b0238c9729886d693ae099f0a0efe9fa658649192d089599141fff7fd0
+  languageName: node
+  linkType: hard
+
+"@storybook/react-dom-shim@npm:8.3.5":
+  version: 8.3.5
+  resolution: "@storybook/react-dom-shim@npm:8.3.5"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+    storybook: ^8.3.5
+  checksum: 2706f490aef844a2ce58ca486b3cf7a81e89cf145c6c2ecac86312b01fbab0ff927ad06746de8561962ed6625a2fcb1b57e9131c2bab90ca9f4706ebfc5ab8aa
   languageName: node
   linkType: hard
 
@@ -3376,6 +3415,45 @@ __metadata:
     typescript:
       optional: true
   checksum: 12b7419848aa2ef8d84a700b4a6f3c0fdc76ab41e1347e8abafd77086bb447faee512e6af9a8861a69938f365983453760c477a2b45b20c07ab8c6517e22a61d
+  languageName: node
+  linkType: hard
+
+"@storybook/react@npm:*":
+  version: 8.3.5
+  resolution: "@storybook/react@npm:8.3.5"
+  dependencies:
+    "@storybook/components": ^8.3.5
+    "@storybook/global": ^5.0.0
+    "@storybook/manager-api": ^8.3.5
+    "@storybook/preview-api": ^8.3.5
+    "@storybook/react-dom-shim": 8.3.5
+    "@storybook/theming": ^8.3.5
+    "@types/escodegen": ^0.0.6
+    "@types/estree": ^0.0.51
+    "@types/node": ^22.0.0
+    acorn: ^7.4.1
+    acorn-jsx: ^5.3.1
+    acorn-walk: ^7.2.0
+    escodegen: ^2.1.0
+    html-tags: ^3.1.0
+    prop-types: ^15.7.2
+    react-element-to-jsx-string: ^15.0.0
+    semver: ^7.3.7
+    ts-dedent: ^2.0.0
+    type-fest: ~2.19
+    util-deprecate: ^1.0.2
+  peerDependencies:
+    "@storybook/test": 8.3.5
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+    storybook: ^8.3.5
+    typescript: ">= 4.2.x"
+  peerDependenciesMeta:
+    "@storybook/test":
+      optional: true
+    typescript:
+      optional: true
+  checksum: 19409ded26d247c300a04659dbb3948b4e60b82bfe5a6a9b34aa72ecebca747f410a76fc8923ba11a8671b44dc5e443cd31e98782a9cf8e4c44c9426073d15a5
   languageName: node
   linkType: hard
 
@@ -3478,6 +3556,15 @@ __metadata:
     react-dom:
       optional: true
   checksum: 9b6cac481784edda6d62447ae5f8792e9a5f377ef69325008e922a494cc726c74b29477b4df213d31a652f1fdc7bce2acbfeb859b89d75093ef781a9681c0f7e
+  languageName: node
+  linkType: hard
+
+"@storybook/theming@npm:^8.3.5":
+  version: 8.3.5
+  resolution: "@storybook/theming@npm:8.3.5"
+  peerDependencies:
+    storybook: ^8.3.5
+  checksum: ba7d025b491b4404724faee440ae5ffc5afa42daeaf608d27270f02ca6167552460c7c11e9727f739d2bbf82352a7567fe8526df95ad974d28a67c16b585de53
   languageName: node
   linkType: hard
 
@@ -3934,6 +4021,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/node@npm:^22.0.0":
+  version: 22.7.4
+  resolution: "@types/node@npm:22.7.4"
+  dependencies:
+    undici-types: ~6.19.2
+  checksum: a3f4154147639369aed08fe6f8d62eff637cf87b187bb252d7bbccdc82884626007af424b08a653c53f2182adfa0340001b4888cb7cbb942cef351210fc742a5
+  languageName: node
+  linkType: hard
+
 "@types/normalize-package-data@npm:^2.4.0":
   version: 2.4.1
   resolution: "@types/normalize-package-data@npm:2.4.1"
@@ -4081,6 +4177,15 @@ __metadata:
   version: 2.0.1
   resolution: "@types/stack-utils@npm:2.0.1"
   checksum: 205fdbe3326b7046d7eaf5e494d8084f2659086a266f3f9cf00bccc549c8e36e407f88168ad4383c8b07099957ad669f75f2532ed4bc70be2b037330f7bae019
+  languageName: node
+  linkType: hard
+
+"@types/storybook__react@npm:^5.2.1":
+  version: 5.2.1
+  resolution: "@types/storybook__react@npm:5.2.1"
+  dependencies:
+    "@storybook/react": "*"
+  checksum: 44538d6247098e5f25722b265df495d7bc0e4b2d1bac9ab812672914c7493554e4dcbedecb4ad5199ffa82c44d84bdcc4bc07ed24017bca4fdc67ae9473ff7df
   languageName: node
   linkType: hard
 
@@ -13214,6 +13319,13 @@ __metadata:
   version: 5.26.5
   resolution: "undici-types@npm:5.26.5"
   checksum: 3192ef6f3fd5df652f2dc1cd782b49d6ff14dc98e5dced492aa8a8c65425227da5da6aafe22523c67f035a272c599bb89cfe803c1db6311e44bed3042fc25487
+  languageName: node
+  linkType: hard
+
+"undici-types@npm:~6.19.2":
+  version: 6.19.8
+  resolution: "undici-types@npm:6.19.8"
+  checksum: de51f1b447d22571cf155dfe14ff6d12c5bdaec237c765085b439c38ca8518fc360e88c70f99469162bf2e14188a7b0bcb06e1ed2dc031042b984b0bb9544017
   languageName: node
   linkType: hard
 

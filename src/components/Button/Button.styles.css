@@ -1,19 +1,77 @@
-.button-base {
-  @apply flex items-center justify-center w-60 py-2 px-4 text-sm tracking-wide font-semibold align-middle text-white rounded-full transition-colors duration-300 uppercase;
+.button {
+  @apply flex items-center justify-center h-12 w-80 p-2 text-xs tracking-wide font-bold align-middle text-white rounded-full transition-colors duration-300 uppercase disabled:cursor-not-allowed;
 }
 
-.button-base span {
+.button-primary {
+  @apply bg-primary-solid text-white;
+}
+
+.button-primary:hover {
+  @apply bg-primary-solid-hover;
+}
+
+.button-primary:active {
+  @apply bg-primary-solid-active text-primary-solid-activeText;
+}
+
+.button-primary:disabled {
+  @apply bg-primary-solid-disabled text-gray-400;
+}
+
+.button-primary-outline {
+  @apply border border-primary-outline text-primary-outline; /* Use the new outline colors */
+
+  &:hover {
+    @apply bg-primary-outline-hover; /* Background color on hover */
+  }
+
+  &:active {
+    @apply bg-primary-outline-active border border-primary-outline-activeBorder text-primary-outline-activeText; /* Background and border on active */
+  }
+
+  &:disabled {
+    @apply bg-gray-200 text-primary-outline-disabled border-none; /* Background and text color on disabled */
+  }
+}
+
+.button-secondary {
+  @apply bg-secondary-solid text-secondary-solid-defaultText;
+}
+
+.button-secondary:hover {
+  @apply bg-secondary-solid-hover;
+}
+
+.button-secondary:active {
+  @apply bg-secondary-solid-active text-secondary-solid-activeText;
+}
+
+.button-secondary:disabled {
+  @apply bg-secondary-solid-disabled text-secondary-solid-disabledText;
+}
+
+.button-secondary-outline {
+  @apply bg-secondary-outline border border-white text-white;
+
+  &:hover {
+    @apply bg-secondary-outline-hover;
+  }
+
+  &:active {
+    @apply bg-secondary-outline-active;
+  }
+
+  &:disabled {
+    @apply bg-secondary-outline text-secondary-outline-disabled border-secondary-outline-disabled;
+  }
+}
+
+.button-icon {
+  @apply h-8 w-8;
+
+  color: inherit;
+}
+
+.button-text {
   @apply pl-2;
-}
-
-.button-primary-solid {
-  @apply bg-gray-950 hover:bg-gray-500 active:bg-gray-200 active:text-gray-500;
-}
-
-.button-secondary-solid {
-  @apply bg-gray-50 text-gray-950 hover:bg-gray-500 active:bg-gray-200 active:text-gray-500;
-}
-
-.button-disabled {
-  @apply bg-gray-200 text-gray-500 cursor-not-allowed;
 }
