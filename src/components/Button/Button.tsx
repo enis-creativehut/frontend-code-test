@@ -4,14 +4,14 @@ import { CheckCircleIcon } from '@heroicons/react/solid'
 import { ButtonProps } from './types'
 import './Button.styles.css'
 
-function Button({
+const Button = ({
   title,
   variant,
   startIcon,
   callbackFn,
   loading,
   disabled,
-}: ButtonProps) {
+}: ButtonProps) => {
   return (
     <button
       className={`button button-${variant ?? 'primary'}`}

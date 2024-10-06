@@ -36,7 +36,7 @@ describe('Button', () => {
         title: 'test button',
         disabled: false,
         callbackFn: jest.fn(),
-        variant: '',
+        variant: 'secondary',
       }
 
       beforeEach(() => {
@@ -61,7 +61,7 @@ describe('Button', () => {
       const mockedProps: ButtonProps = {
         title: 'test button',
         callbackFn: jest.fn(),
-        variant: '',
+        variant: 'primary-outline',
         loading: true,
       }
 

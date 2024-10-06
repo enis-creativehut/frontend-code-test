@@ -1,4 +1,4 @@
-function Spinner() {
+const Spinner = () => {
   return (
     <svg
       className="animate-spin h-8 w-8"
