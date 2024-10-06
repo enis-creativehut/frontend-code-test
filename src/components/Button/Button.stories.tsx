@@ -6,7 +6,7 @@ export default {
   title: 'Components/Button',
   component: Button,
   argTypes: {
-    callback: { action: 'clicked' }, // Handles callback actions
+    callback: { action: 'clicked' },
   },
 } as Meta<typeof Button>
 

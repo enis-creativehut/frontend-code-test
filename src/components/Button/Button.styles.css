@@ -15,22 +15,22 @@
 }
 
 .button-primary:disabled {
-  @apply bg-primary-solid-disabled text-gray-400;
+  @apply bg-primary-solid-disabled text-primary-solid-disabledText;
 }
 
 .button-primary-outline {
-  @apply border border-primary-outline text-primary-outline; /* Use the new outline colors */
+  @apply border border-primary-outline text-primary-outline;
 
   &:hover {
-    @apply bg-primary-outline-hover; /* Background color on hover */
+    @apply bg-primary-outline-hover;
   }
 
   &:active {
-    @apply bg-primary-outline-active border border-primary-outline-activeBorder text-primary-outline-activeText; /* Background and border on active */
+    @apply bg-primary-outline-active border border-primary-outline-activeBorder text-primary-outline-activeText;
   }
 
   &:disabled {
-    @apply bg-gray-200 text-primary-outline-disabled border-none; /* Background and text color on disabled */
+    @apply bg-gray-200 text-primary-outline-disabled border-none;
   }
 }
 
