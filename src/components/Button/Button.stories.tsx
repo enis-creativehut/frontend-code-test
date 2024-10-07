@@ -19,7 +19,6 @@ const Template: StoryFn<ButtonProps> = (args) => (
 export const PrimarySolid = Template.bind({})
 PrimarySolid.args = {
   variant: 'primary',
-  startIcon: true,
   title: 'Button',
   disabled: false,
   callbackFn: () => alert('Button clicked!'),
@@ -28,7 +27,6 @@ PrimarySolid.args = {
 export const SecondarySolid = Template.bind({})
 SecondarySolid.args = {
   variant: 'secondary',
-  startIcon: true,
   title: 'Button',
   disabled: false,
   callbackFn: () => alert('Button clicked!'),
@@ -37,7 +35,6 @@ SecondarySolid.args = {
 export const PrimaryOutline = Template.bind({})
 PrimaryOutline.args = {
   variant: 'primary-outline',
-  startIcon: true,
   title: 'Button',
   disabled: false,
   callbackFn: () => alert('Button clicked!'),
@@ -46,7 +43,6 @@ PrimaryOutline.args = {
 export const SecondaryOutline = Template.bind({})
 SecondaryOutline.args = {
   variant: 'secondary-outline',
-  startIcon: true,
   title: 'Button',
   disabled: false,
   callbackFn: () => alert('Button clicked!'),

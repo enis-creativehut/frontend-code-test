@@ -10,7 +10,7 @@ describe('Button', () => {
         startIcon: true,
         disabled: true,
         callbackFn: jest.fn(),
-        variant: '',
+        variant: 'primary',
       }
 
       beforeEach(() => {

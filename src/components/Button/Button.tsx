@@ -11,12 +11,13 @@ const Button = ({
   callbackFn,
   loading,
   disabled,
+  type = 'button',
 }: ButtonProps) => {
   return (
     <button
       className={`button button-${variant ?? 'primary'}`}
       disabled={disabled || loading}
-      type="button"
+      type={type}
       onClick={callbackFn}
     >
       {startIcon && !loading && (
